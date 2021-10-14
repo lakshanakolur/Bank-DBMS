@@ -41,7 +41,7 @@ CREATE TABLE Loans(l_account_no varchar(20) PRIMARY KEY,
 			l_term integer, 
 			l_rate integer DEFAULT 6,
 			l_cust_id varchar(20),
-			CHECK(amount>0));
+			CHECK(l_amount>0));
 
 CREATE TABLE Shares(s_number integer PRIMARY KEY,
 			s_value integer, 
